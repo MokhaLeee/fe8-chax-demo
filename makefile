@@ -68,6 +68,7 @@ PNG2DMP           := $(EA_DIR)/Tools/Png2Dmp
 COMPRESS          := $(EA_DIR)/Tools/compress
 LYN               := $(EA_DIR)/Tools/lyn
 EA_DEP            := $(EA_DIR)/ea-dep
+PORTRAITFORMATTER := $(EA_DIR)/Tools/PortraitFormatter
 
 LYN_PROTECTOR := $(TOOL_DIR)/scripts/lynjump-protector.sh
 LYN_DETECTOR  := $(TOOL_DIR)/scripts/lynjump-detector.sh
@@ -304,6 +305,31 @@ $(GFX_HEADER): $(GFX_SOURCES)
 
 CLEAN_BUILD += $(GFX_DIR)
 CLEAN_FILES += $(GFX_HEADER)
+
+# ============
+# = Portrait =
+# ============
+
+PORTRAIT_DIR       := $(CONTENTS_DIR)/Portrait
+
+PORTRAIT_PROCESS   := $(PORTRAIT_DIR)/Scripts/portrait-process-mokha.py
+PORTRAIT_LIST      := $(PORTRAIT_DIR)/PortraitList.txt
+PORTRAIT_INSTALLER := $(PORTRAIT_DIR)/PortraitInstaller.event
+PORTRAIT_HEADER    := $(PORTRAIT_DIR)/PortraitDef.h
+
+portrait: $(PORTRAIT_INSTALLER)
+
+PORTRAIT_DEPS := $(shell $(PORTRAIT_PROCESS) $(PORTRAIT_LIST) --list-files)
+
+$(PORTRAIT_INSTALLER) $(PORTRAIT_HEADER): $(PORTRAIT_LIST) $(PORTRAIT_DEPS)
+	@echo "[GEN]	$@"
+	@$(PORTRAIT_PROCESS) $< --installer $(PORTRAIT_INSTALLER) --definition $(PORTRAIT_HEADER)
+
+%_mug.dmp %_palette.dmp %_frames.dmp %_minimug.dmp: %.png
+	@echo "[GEN]	$@"
+	@$(PORTRAITFORMATTER) $<
+
+CLEAN_FILES += $(PORTRAIT_DEPS) $(PORTRAIT_INSTALLER) $(PORTRAIT_HEADER)
 
 # ==========
 # = Banims =
