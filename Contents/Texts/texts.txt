@@ -1,4 +1,2 @@
-#include "Source/vanilla.txt"
-// #include "Source/vanilla_cropped.txt"
-
+#include "Source/basic.txt"
 #include "Source/kernel.txt"

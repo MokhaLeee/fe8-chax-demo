@@ -1,9 +1,5 @@
 /* Auto generated */
-#ifdef CONFIG_CROP_VANILLA_MSG
-    #include "build/msg_data_cropped.event"
-#else
-    #include "build/msg_data.event"
-#endif
+#include "build/msg_data.event"
 
 PUSH
     ORG 0x0006DC

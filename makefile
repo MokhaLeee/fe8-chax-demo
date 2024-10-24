@@ -1,4 +1,10 @@
+.SUFFIXES:
+.SECONDARY:
 MAKEFLAGS += --no-print-directory
+
+# ==================
+# = PROJECT CONFIG =
+# ==================
 
 include configs.mk
 
