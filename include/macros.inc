@@ -45,6 +45,12 @@
     pop {\reg}
 .endm
 
+.macro _blh to,reg=r3
+    ldr \reg,=\to
+    mov r14,\reg
+    .short 0xF800
+.endm
+
 .macro fun value, name
     .global \name
     .type \name, function
