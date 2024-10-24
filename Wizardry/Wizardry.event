@@ -56,3 +56,14 @@ ALIGN 4
 #include "Core/AiHack/AiHack.event"
 
 #include "Misc/SkillEffects/MiscSkillEffects.event"
+#include "Misc/StatScreenfx/StatScreenfx.event"
+#include "Misc/ChapterIntrofx/ChapterIntrofx.event"
+#include "Misc/GameIntrofx/GameIntrofx.event"
+
+#ifdef CONFIG_INSTALL_CONVOYEXPA
+    #include "Misc/ConvoyExpa/ConvoyExpa.event"
+#endif
+
+#ifdef CONFIG_USE_CHAR_CUSTOM_ANIM
+    #include "Misc/Individual_animation_ea_2/Installer.event"
+#endif

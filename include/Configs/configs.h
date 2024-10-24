@@ -92,16 +92,6 @@
 #define CONFIG_PERFORMANCE_OPTIMIZATION
 
 /**
- * Install DrawMapActionAnimation
- */
-#define CONFIG_INSTALL_MAPACTIONANIM
-
-/**
- * Install StatScreenfx
- */
-#define CONFIG_INSTALL_STATSCREENFX
-
-/**
  * Install Bow2Decrease
  */
 #define CONFIG_INSTALL_BOW2DECREASE
