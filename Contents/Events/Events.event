@@ -1,1 +1,2 @@
-#include "RemoveWM/RemoveWM.event"
+#include "MiscHacks/RemoveWM.event"
+#include "MiscHacks/MNC2-Fix.event"

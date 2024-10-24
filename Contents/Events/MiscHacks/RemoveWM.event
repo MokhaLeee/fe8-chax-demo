@@ -1,0 +1,13 @@
+#include "Source/LynJump.event"
+#include "Source/RemoveWM.lyn.event"
+
+// Skip very begining world map
+PUSH
+    ORG $A39768
+    EVBIT_MODIFY 0x1
+    SKIPWN
+    ENDA
+
+    ORG $09E00
+    SHORT $4770
+POP
