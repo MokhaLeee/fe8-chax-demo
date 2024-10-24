@@ -20,3 +20,6 @@
 ## Skill icons
 
 - JeorgeReds: BonusDoubler
+
+## Maps
+- Aura Wolf

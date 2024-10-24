@@ -267,6 +267,20 @@ CLEAN_FILES += $(TSA_FILES:.tsa=.tsa.lz)
 
 CLEAN_FILES += $(PNG_FILES:.png=.img.bin) $(PNG_FILES:.png=.map.bin) $(PNG_FILES:.png=.pal.bin)
 
+# ========
+# = MAPS =
+# ========
+
+MAP_DIR := Contents/Maps
+TMX2EA  := python3 $(MAP_DIR)/Scripts/tmx2ea-mokha.py
+
+%.tmx.event %_data.dmp: %.tmx
+	@echo "[GEN]	$@"
+	@echo | $(TMX2EA) $< > /dev/null
+
+TMXS := $(shell find -type f -name '*.tmx')
+CLEAN_FILES += $(TMXS:.tmx=.tmx.event) $(TMXS:.tmx=_data.dmp)
+
 # ============
 # = EfxAnims =
 # ============

@@ -5,6 +5,15 @@ ALIGN 4
 #include "PListSplit/PListSplit.event"
 
 ALIGN 4
+#include "Maps/Maps.event"
+
+ALIGN 4
+#include "Chapters/Chapters.event"
+
+ALIGN 4
+#include "Events/Events.event"
+
+ALIGN 4
 #include "ExternalHacks/ExternalHacks.event"
 
 ALIGN 4
@@ -12,9 +21,6 @@ ALIGN 4
 
 ALIGN 4
 #include "Gfx/Gfx.event"
-
-ALIGN 4
-#include "Events/Events.event"
 
 ALIGN 4
 #include "Banim/Banim.event"

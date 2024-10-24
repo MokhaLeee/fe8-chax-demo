@@ -42,5 +42,8 @@ Tools/dotnet-install.sh
 # EfxAnims
 *.efx.event
 
+# Maps
+*.tmx.event
+
 packages-microsoft-prod.deb
 *.EXPERIMENTAL-checkpatch-fixes

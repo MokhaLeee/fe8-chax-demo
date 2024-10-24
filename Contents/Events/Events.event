@@ -1,2 +1,7 @@
 #include "MiscHacks/RemoveWM.event"
 #include "MiscHacks/MNC2-Fix.event"
+
+{
+    #include "Events/Prologue.lyn.event"
+    NewEventPointerTable_Event(CHDATA_EVENT_PROLOGUE, ThisChapter)
+}

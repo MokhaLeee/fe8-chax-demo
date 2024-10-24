@@ -1,0 +1,6 @@
+ALIGN 4
+{
+    #define map_changes CHDATA_TILECHANGE_PROLOGUE
+    #include "Source/Overworld.tmx.event"
+    #undef map_changes
+}
