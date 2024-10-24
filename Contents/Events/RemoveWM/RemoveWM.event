@@ -1,5 +1,3 @@
-WARNING __World_map_removed__
-
 PUSH
     ORG 0xA3D770
     // PROC_GOTO(25)
