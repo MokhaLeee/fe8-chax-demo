@@ -25,7 +25,7 @@ WIZARDRY_DIR := Wizardry
 CONTENTS_DIR := Contents
 GAMEDATA_DIR := Data
 
-HACK_DIRS := $(CONFIG_DIR) Wizardry $(CONTENTS_DIR) $(GAMEDATA_DIR) $(TEXTS_DIR)
+HACK_DIRS := $(CONFIG_DIR) Wizardry $(CONTENTS_DIR) $(GAMEDATA_DIR)
 
 all:
 	@$(MAKE) pre_build	|| exit 1
@@ -348,6 +348,26 @@ BANIM_DIR := $(CONTENTS_DIR)/Banim
 
 CLEAN_BUILD += $(BANIM_DIR)
 
+# =========
+# = Glyph =
+# =========
+FONT_DIR := Fonts
+
+GLYPH_INSTALLER := $(FONT_DIR)/GlyphInstaller.event
+GLYPH_DEPS := $(FONT_DIR)/FontList.txt
+
+font: $(GLYPH_INSTALLER)
+
+$(GLYPH_INSTALLER): $(GLYPH_DEPS)
+	@$(MAKE) -C $(FONT_DIR)
+
+%_font.img.bin: %_font.png
+	@echo "[GEN]	$@"
+	@$(GRIT) $< -gB2 -p! -tw16 -th16 -ftb -fh! -o $@
+
+PRE_BUILD   += font
+CLEAN_BUILD += $(FONT_DIR)
+
 # ========
 # = ENUM =
 # ========
@@ -411,6 +431,6 @@ clean_basic:
 	@rm -rf $(CLEAN_DIRS)
 
 clean:
-	@for i in $(CLEAN_BUILD); do if test -e $$i/makefile ; then $(MAKE) -f $$i/makefile clean || { exit 1;} fi; done;
+	@for i in $(CLEAN_BUILD); do if test -e $$i/makefile ; then echo "Clean $$i .."; $(MAKE) -f $$i/makefile clean || { exit 1;} fi; done;
 	@$(MAKE) clean_basic
-	@echo "Kernel cleaned .."
+	@echo "All cleaned .."

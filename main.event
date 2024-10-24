@@ -45,6 +45,11 @@ ORG FreeSpaceKernelText
 MESSAGE FreeSpace___Text___ end at (CURRENTOFFSET) size as (CURRENTOFFSET - FreeSpaceKernelText) max (FreeSpaceKernelTextSize)
 ASSERT (FreeSpaceKernelText + FreeSpaceKernelTextSize - CURRENTOFFSET)
 
+ORG FreeSpaceFont
+    #include "Fonts/Fonts.event"
+MESSAGE FreeSpace___Font___ end at (CURRENTOFFSET) size as (CURRENTOFFSET - FreeSpaceFont) max (FreeSpaceFontSize)
+ASSERT (FreeSpaceFont + FreeSpaceFontSize - CURRENTOFFSET)
+
 ORG FreeSpaceDEMO
     #include "Contents/Contents.event"
 MESSAGE FreeSpace___Demo___ end at (CURRENTOFFSET)
