@@ -1,0 +1,40 @@
+#include "Source/data.lyn.event"
+
+ALIGN 4
+PreBattleCalcFuncs:
+    POIN PreBattleCalcInit
+
+    POIN PreBattleCalcSilencerRate PreBattleCalcWeaponTriangle PreBattleCalcSkills
+    POIN PreBattleCalcLegendSkills PreBattleCalcDebuffs PreBattleCalcCombatArt PreBattleCalcAuraEffect
+    POIN PreBattleCalcStatDebuffs PreBattleCalcLeadershipBonus
+
+    POIN PreBattleCalcEnd
+    POIN KernelPad1 KernelPad1 KernelPad1 KernelPad1
+    WORD 0
+
+BattleDamageCalcFuncs:
+    POIN KernelPad1 KernelPad1 KernelPad1 KernelPad1
+    WORD 0
+
+BattleRealDamageCalcFuncs:
+    POIN KernelPad2 KernelPad2 KernelPad2 KernelPad2
+    WORD 0
+
+PreBattleGenerateFuncs:
+    POIN ClearBattleGlobalFlags
+    POIN ResetBattleSkillActivateBuf
+    POIN PreBattleGenerate_LightAndDark
+    POIN PreBattleGenerate_TrigCombartKTut
+
+    POIN KernelPad1 KernelPad1 KernelPad1 KernelPad1
+    WORD 0
+
+ALIGN 4
+Gfx_BKSEL:
+    #incbin "Data/Gfx_BKSEL.4bpp"
+
+ALIGN 4
+Pal_BKSEL:
+    #incbin "Data/Gfx_BKSEL.gbapal"
+
+#include "WeaponLockEx/data.event"

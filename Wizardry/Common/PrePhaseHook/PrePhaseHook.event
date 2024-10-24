@@ -1,0 +1,8 @@
+#include "Source/PrePhaseHook.lyn.event"
+
+// include "data.event"
+
+PUSH
+    ORG 0x59A2C4
+    POIN ProcScr_PrePhaseHook
+POP

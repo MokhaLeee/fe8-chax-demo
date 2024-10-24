@@ -1,0 +1,88 @@
+## MSG_SKILL_Renewal
+Renewal:[NL]
+Restore 30% of max HP[NL]
+at the start of each turn.[X]
+
+## MSG_SKILL_Imbue
+Imbue:[NL]
+Recover HP equal to MAG[NL]
+at the start of each turn.[X]
+
+## MSG_SKILL_Forager
+Forager:[NL]
+Recover 20% HP each turn if[NL]
+on a Plain, Forest or Mountain.[X]
+
+## MSG_SKILL_Airlock
+Airlock:[NL]
+Set weather to clear at[NL]
+the start of the turn.[X]
+
+## MSG_SKILL_Drizzle
+Drizzle:[NL]
+Set weather to rain at[NL]
+the start of the turn.[X]
+
+## MSG_SKILL_Drought
+Drought:[NL]
+Set weather to sunny at[NL]
+the start of the turn.[X]
+
+## MSG_SKILL_SnowWarning
+SnowWarning:[NL]
+Set weather to snowing at[NL]
+the start of the turn.[X]
+
+## MSG_SKILL_SandStream
+SandStream:[NL]
+Set weather to a sandstorm[NL]
+at the start of the turn.[X]
+
+## MSG_SKILL_YuneWhispers_NAME
+YuneWhis[X]
+
+## MSG_SKILL_YuneWhispers
+Yune's Whispers: At start[NL]
+of turn, put ATK/SPD -6 to enemy[NL]
+who's RES is 3 less than unit's[X]
+
+## MSG_SKILL_RainDish
+RainDish:[NL]
+If it is raining, then restore 30%[NL]
+of max HP at the start of each turn.[X]
+
+## MSG_SKILL_Boon
+Boon:[NL]
+Heal bad status effects at the[NL]
+beginning of the turn.[X]
+
+## MSG_SKILL_Relief
+Relief:[NL]
+Restore 20% of max HP at the start of[NL]
+turn, if there are no allies within 2 tiles.[X]
+
+## MSG_SKILL_Camaraderie
+Camaraderie:[NL]
+Restore 10% of max HP at the start of[NL]
+turn, if there are allies within 2 tiles.[X]
+
+## MSG_SKILL_Amaterasu
+Amaterasu:[NL]
+Allies within 2 tiles 
+recover 20% HP each turn.[X]
+
+## MSG_SKILL_IndoorMarch_NAME
+Indoor-M[X]
+
+## MSG_SKILL_IndoorMarch
+Indoor March:[NL]
++2 MOV at the start of the turn,[NL]
+if the unit is on indoor terrain.[X]
+
+## MSG_SKILL_NatureRush_NAME
+Nature-R[X]
+
+## MSG_SKILL_NatureRush
+Nature Rush:[NL]
++2 MOV at the start of the turn,[NL]
+if the unit is on outdoor terrain.[X]

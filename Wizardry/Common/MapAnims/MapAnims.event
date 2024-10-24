@@ -1,0 +1,12 @@
+#ifndef MAP_ANIMS_INSTALLED
+#define MAP_ANIMS_INSTALLED
+
+#include "HeavyGravity/HeavyGravityfx.event"
+#include "ThunderStorm/Thunderfx.event"
+#include "NinianPray/NinianPray.event"
+#include "Misc/Heal.lyn.event"
+#include "Misc/Hurt.lyn.event"
+
+// #include "data.event"
+
+#endif /* MAP_ANIMS_INSTALLED */

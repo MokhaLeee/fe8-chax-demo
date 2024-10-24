@@ -1,0 +1,168 @@
+## MSG_SKILL_Anathema
+Anathema:[NL]
+-10 Avoid/Dodge to all[NL]
+enemies within 3 tiles.[X]
+
+## MSG_SKILL_Bond
+Bond:[NL]
++10 Hit, +3 damage to all[NL]
+allies within 3 tiles.[X]
+
+## MSG_SKILL_Intimidate
+Intimidate:[NL]
+-10 Avoid to all[NL]
+enemies within 2 tiles.[X]
+
+## MSG_SKILL_Tantivy
+Tantivy:[NL]
++10 Hit/Avoid if there are[NL]
+no allies within 3 tiles.[X]
+
+## MSG_SKILL_Focus
+Focus:[NL]
++10 Crit if there are[NL]
+no allies within 3 tiles.[X]
+
+## MSG_SKILL_Hex
+Hex:[NL]
+-15 Avoid to all[NL]
+adjacent enemies.[X]
+
+## MSG_SKILL_Charm
+Charm: Allies within 2[NL]
+tiles deal +3 attack.[X]
+
+## MSG_SKILL_Infiltrator
+Infilt: If within 2 spaces[NL]
+of two or more enemies, gain +3[NL]
+damage and +15% Hit.[X]
+
+## MSG_SKILL_Inspiration
+Inspir: Allies within 2 tiles[NL]
+deal +2 damage and receive -2 damage.[X]
+
+## MSG_SKILL_DivinelyInspiring
+D-Inspir: Adjacent allies[NL]
+deal +3 damage and receive -1 damage.[X]
+
+## MSG_SKILL_LilysPoise
+Lily's Poise: [NL]
+Adjacent allies deal +1 damage [NL]
+and receive -3 damage.[X]
+
+## MSG_SKILL_VoiceOfPeace
+V-Peace: Enemies within[NL]
+2 tiles deal -2 damage.[X]
+
+## MSG_SKILL_BattleRange1
+Range Skill: ATK +10 if[NL]
+no ally with 3 tiles.[X]
+
+## MSG_SKILL_BattleRange2
+Range Skill: ATK +7 if[NL]
+no ally with 2 tiles.[X]
+
+## MSG_SKILL_BattleRange3
+Range Skill: ATK +5 if[NL]
+no ally with 1 tiles.[X]
+
+## MSG_SKILL_Peacebringer
+Peacebringer:[NL]
+Allies and enemies within[NL]
+2 tiles deal -2 damage.[X]
+
+## MSG_SKILL_DriveStr
+Drive Str:[NL]
+Allies within 2 tiles receive +4 STR.[X]
+
+## MSG_SKILL_DriveMag
+Drive Mag:[NL]
+Allies within 2 tiles receive +4 MAG.[X]
+
+## MSG_SKILL_DriveSpd
+Drive Spd:[NL]
+Allies within 2 tiles receive +4 SPD.[X]
+
+## MSG_SKILL_DriveDef
+Drive Def:[NL]
+Allies within 2 tiles receive +4 DEF.[X]
+
+## MSG_SKILL_DriveRes
+Drive Res:[NL]
+Allies within 2 tiles receive +4 RES.[X]
+
+## MSG_SKILL_Charisma
+Charisma:[NL]
+Grants +10 Hit/Avoid to all allies within three tiles.[X]
+
+## MSG_SKILL_Daunt
+Daunt:[NL]
+-5 Hit and Crit to all enemy[NL]
+units in a 3-tile radius.[X]
+
+## MSG_SKILL_BloodTide
+Blood Tide:[NL]
+Grants +5 ATK and Hit[NL]
+to adjacent allies.[X]
+
+## MSG_SKILL_WhitePool
+White Pool:[NL]
+Grants +5 ATK and AS[NL]
+to adjacent allies.[X]
+
+## MSG_SKILL_NightTide
+Night Tide:[NL]
+Grants +5 DEF and RES[NL]
+to adjacent allies.[X]
+
+## MSG_SKILL_SpurStr
+Spur Str:[NL]
+Adjacent allies gain +4 STR.[X]
+
+## MSG_SKILL_SpurMag
+Spur Mag:[NL]
+Adjacent allies gain +4 MAG.[X]
+
+## MSG_SKILL_SpurSpd
+Spur Spd:[NL]
+Adjacent allies gain +4 SPD.[X]
+
+## MSG_SKILL_SpurDef
+Spur Def:[NL]
+Adjacent allies gain +4 DEF.[X]
+
+## MSG_SKILL_SpurRes
+Spur Res:[NL]
+Adjacent allies gain +4 RES.[X]
+
+## MSG_SKILL_Gentilhomme
+Gentilhomme:[NL]
+Female allies within 2 tiles receive -2 damage.[X]
+
+## MSG_SKILL_Demoiselle
+Demoiselle:[NL]
+Male allies within 2 tiles receive -2 damage.[X]
+
+## MSG_SKILL_Solidarity
+Solidarity:[NL]
++10 Crit and Crit Avoid to adjacent allies.[X]
+
+## MSG_SKILL_Plus
+Plus: At the start of the turn,[NL]
++4 to all combat stats for adjacent[NL]
+allies that have the 'Minus' skill.[X]
+
+## MSG_SKILL_Minus
+Minus: At the start of the turn,[NL]
++4 to all combat stats for adjacent[NL]
+allies that have the 'Plus' skill.[X]
+
+## MSG_SKILL_MaleficAura
+Malefic Aura:[NL]
+Enemies within 2 tiles[NL]
+receive +2 magic damage.[X]
+
+## MSG_SKILL_KeepUp
+Keep Up: +2 to MOV at the start of[NL]
+the turn, if within 3 tiles of an[NL]
+ally with Canto or Canto+.[X]

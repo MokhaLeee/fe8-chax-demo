@@ -1,0 +1,33 @@
+#ifndef SAVE_DATA_INSTALLED
+#define SAVE_DATA_INSTALLED
+
+/*
+    Mokha's plan:
+    SAVE NAME       SAVE OFFSET     SAVE LENGTH
+    meta            0x00            0xD4
+    suspend         0xD4            0x3000
+    save1           0x30D4          0x19B0
+    save2           0x4A84          0x19B0
+    save3           0x6434          0x19B0
+    magic           0x7DE4          0x0008
+    link_arena      ------          0x0
+    extra_map       ------          0x0
+*/
+
+// include "data.event"
+
+#include "Source/LynJump.event"
+#include "Source/ModularSaveCore.lyn.event"
+#include "Source/NewGameSaveHook.lyn.event"
+#include "Source/MsaFunc.lyn.event"
+#include "Source/MsuFunc.lyn.event"
+#include "Source/ExternalLoader.lyn.event"
+#include "SaveDataExpansion/RelocMiscChunks.event"
+#include "SaveDataExpansion/RemoveLinkArena.event"
+#include "SaveDataExpansion/RemoveXmap.event"
+
+#ifdef CONFIG_VERIFY_SKILLSYS_SRAM
+    #include "Source/SramVerify.lyn.event"
+#endif
+
+#endif

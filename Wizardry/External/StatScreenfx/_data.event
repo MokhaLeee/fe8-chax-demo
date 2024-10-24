@@ -1,0 +1,48 @@
+ALIGN 4
+#include "Source/StatScreenData.lyn.event"
+
+ALIGN 4
+Img_StatScreenUI:
+    #incbin "Gfx/Img_StatScreenUI.lz77"
+
+ALIGN 4
+Pal_StatScreenUI:
+    #incbin "Gfx/Img_StatScreenUI.gbapal"
+
+ALIGN 4
+Img_StatScreenUIRed:
+    #incbin "Gfx/Img_StatScreenUiRed.lz77"
+
+ALIGN 4
+Pal_StatScreenUIRed:
+    #incbin "Gfx/Img_StatScreenUiRed.gbapal"
+
+ALIGN 4
+Img_StatScreenMuAreaBg:
+    #incbin "Gfx/Img_StatScreenMuAreaBg.lz77"
+
+ALIGN 4
+Pal_StatScreenMuAreaBg:
+    #incbin "Gfx/Img_StatScreenMuAreaBg.gbapal"
+
+ALIGN 4
+Img_StatScreenPageStatusBg:
+    #incbin "Gfx/Img_StatScreenPageStatusBg.lz77"
+
+ALIGN 4
+Pal_StatScreenScrollBG:
+    #incbin "Gfx/Img_StatScreenBG3.gbapal"
+
+ALIGN 4
+Img_StatScreenScrollBG:
+    #incbin "Gfx/Img_StatScreenBG3.lz77"
+
+ALIGN 4
+gpPal_StatScreenUIRed:      POIN Pal_StatScreenUIRed
+gpImg_StatScreenUIRed:      POIN Img_StatScreenUIRed
+gpPal_StatScreenUI:         POIN Pal_StatScreenUI
+gpImg_StatScreenUI:         POIN Img_StatScreenUI
+gpImg_StatScreenScrollBG:   POIN Img_StatScreenScrollBG
+gpPal_StatScreenScrollBG:   POIN Pal_StatScreenScrollBG
+gpImg_StatScreenMuAreaBg:   POIN Img_StatScreenMuAreaBg
+gpPal_StatScreenMuAreaBg:   POIN Pal_StatScreenMuAreaBg

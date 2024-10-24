@@ -1,0 +1,75 @@
+PUSH
+    ORG $2C44C
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    // Already covered in function: GetBattleUnitStaffExp
+    ORG $2C660
+    // #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $2CB0C
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $2CE98
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $2CFA8
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+    PROTECT $2CF4C $2D0BC // Port from DebuffRework/Source/MiscHooks.event
+
+    ORG $2F658
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $2F730
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $2F7FC
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $58244
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $58930
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $72564
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B4CC
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B574
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B628
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B680
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B6D8
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B738
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B790
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B7E8
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B84C
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B8B8
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7B9B0
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $7C920
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+
+    ORG $A6D18
+    #include "Source/pr_BattleHitArrayRe.lyn.event"
+POP

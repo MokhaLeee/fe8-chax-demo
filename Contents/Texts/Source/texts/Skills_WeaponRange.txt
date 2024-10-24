@@ -1,0 +1,38 @@
+
+## MSG_SKILL_RangeBonusBMag1
+B.Mag RNG+1:[NL]
+Increases black magic range by 1[X]
+
+## MSG_SKILL_RangeBonusBMag2
+B.Mag RNG+2:[NL]
+Increases black magic range by 2[X]
+
+## MSG_SKILL_RangeBonusBow1
+Bow RNG+1:[NL]
+Increases bow range by 1[X]
+
+## MSG_SKILL_RangeBonusBow2
+Bow RNG+2:[NL]
+Increases bow range by 2[X]
+
+## MSG_SKILL_RunningStart_NAME
+R-Start[X]
+
+## MSG_SKILL_RunningStart
+RunningStart:[NL]
++1 attack range for[NL]
+every two tiles moved.[X]
+
+## MSG_SKILL_HighGround
+HighGround:[NL]
++2 range for bows and tomes[NL]
+when unit is atop forts.[X]
+
+## MSG_SKILL_PointBlank
+PointBlank:[NL]
+Set minimum range[NL]
+of bows to 1.[X]
+
+## MSG_SKILL_StaffSavant
+StaffSavant:[NL]
++1 range for staves.[X]

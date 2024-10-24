@@ -1,0 +1,15 @@
+#ifndef EVENT_EXPANSION_INSTALLED
+#define EVENT_EXPANSION_INSTALLED
+
+PUSH
+    ORG $0CEE0
+    POIN gEventLoCmdTableRe
+POP
+
+#include "Source/LynJump.event"
+#include "Source/EventRework.lyn.event"
+
+// #include "data.event"
+// #include "def.event"
+
+#endif /* EVENT_EXPANSION_INSTALLED */

@@ -1,0 +1,24 @@
+#ifndef DEBUFF_REWORK_INSTALLED
+#define DEBUFF_REWORK_INSTALLED
+
+#include "Source/Core.lyn.event"
+#include "Source/MiscHooks.lyn.event"
+#include "Source/MiscHooks.event"
+#include "Source/DebuffIconBlink.lyn.event"
+#include "Source/StatusDepletion.lyn.event"
+#include "Source/EfxStatusUnit.lyn.event"
+#include "Source/ExternalHooks.lyn.event"
+
+#include "StatDebuff/LynJump.event"
+#include "StatDebuff/StatDebuff.lyn.event"
+#include "StatDebuff/Hooks.lyn.event"
+
+#include "Source/EventCmd.lyn.event"
+InjectEventLoCmd(EVENT_CMD_DEBUFF, EventDebuffOperation)
+
+#include "api/api.lyn.event"
+
+// #include "data.event"
+// #include "def.event"
+
+#endif /* DEBUFF_REWORK_INSTALLED */

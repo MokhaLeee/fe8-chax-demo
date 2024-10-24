@@ -1,0 +1,16 @@
+#include "Source/LynJump.event"
+#include "Source/BattleForcast.lyn.event"
+#include "Source/BkselHelpBox.lyn.event"
+#include "Source/RText_.lyn.event"
+
+// #include "data.event"
+
+PUSH
+    // Null Bksel Item Name
+    ORG $36628
+    SHORT $4770
+
+    // Give "No Combat Art" a longer length
+    ORG $36DEA
+    SHORT $210C
+POP

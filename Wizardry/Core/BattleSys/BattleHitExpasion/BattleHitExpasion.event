@@ -1,0 +1,6 @@
+#include "RepointEfxHp.event"
+#include "RepointBattleHit.event"
+#include "RepointAnimRound.event"
+
+#include "Source/LynJump.event"
+#include "Source/BattleHitExpa.lyn.event"

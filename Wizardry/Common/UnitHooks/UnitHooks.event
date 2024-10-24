@@ -1,0 +1,20 @@
+#ifndef UNIT_HOOKS_INSTALLED
+#define UNIT_HOOKS_INSTALLED
+
+#include "Source/LynJump.event"
+
+/* LoadUnit */
+#include "Source/LoadUnit.lyn.event"
+
+/* BattleUnitHook */
+#include "Source/BattleUnitHook.lyn.event"
+
+/* CopyUnit */
+#include "Source/CopyUnit.lyn.event"
+
+/* ClearUnit */
+#include "Source/ClearUnit.lyn.event"
+
+// #include "data.event"
+
+#endif

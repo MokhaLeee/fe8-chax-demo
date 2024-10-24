@@ -1,0 +1,44 @@
+#ifndef BATTLE_SYS_INSTALLED
+#define BATTLE_SYS_INSTALLED
+
+#include "BattleHitExpasion/BattleHitExpasion.event"
+#include "WeaponLockEx/WeaponLockEx.event"
+#include "LeaderShip/LeaderShip.event"
+#include "Bow2Decrease/Bow2Decrease.event"
+
+#include "Source/LynJump.event"
+#include "Source/BattleGenerate.lyn.event"
+#include "Source/PreBattleCalc.lyn.event"
+#include "Source/BattleCalcReal.lyn.event"
+#include "Source/WeaponTriangle.lyn.event"
+#include "Source/BattleHit.lyn.event"
+#include "Source/BattleHitAttr.lyn.event"
+#include "Source/BattleDamage.lyn.event"
+#include "Source/BattleForcast.lyn.event"
+#include "Source/BattleOrder.lyn.event"
+#include "Source/BattleWeapon.lyn.event"
+#include "Source/CheckEffective.lyn.event"
+#include "Source/BattleExp.lyn.event"
+#include "Source/BattleUI.lyn.event"
+#include "Source/Misc.lyn.event"
+
+// #include "data.event"
+
+PUSH
+    // Make sure BKSEL always deiplay x2 or x4 obj
+    ORG $36F94
+    SHORT $2002    // MOV R0, #2
+    SHORT 0 0 0
+    ORG $36FB6
+    SHORT $2004    // MOV R0, #4
+    SHORT 0 0 0
+    
+    // Repoint Palette
+    ORG $36E14
+    POIN Pal_BKSEL
+
+    ORG $2C7C0 // BattleApplyWeaponTriangleEffect
+    jumpToHack(_BattleApplyWeaponTriangleEffect)
+POP
+
+#endif
