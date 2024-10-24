@@ -18,6 +18,8 @@
     #include "ConvoyExpa/ConvoyExpa.event"
 #endif
 
+#include "ChapterIntrofx/ChapterIntrofx.event"
+
 #include "FillAIDangerMap20220712/install.event"
 #include "AutoGenLeftOAM/installer.txt"
 #include "01command_hack/01command_hack.event"
