@@ -161,7 +161,7 @@ LYN_REF := $(EXT_REF:.s=.o) $(RAM_REF:.s=.o) $(FE8_REF)
 # Wizardry dir source files are in-bl ranged
 Wizardry/%.lyn.event: Wizardry/%.o $(LYN_REF) $(FE8_SYM)
 	@echo "[LYN]	$@"
-	$(LYN) $< $(LYN_REF) > $@
+	@$(LYN) $< $(LYN_REF) > $@
 	@$(LYN_PROTECTOR) $@ $(FE8_SYM) >> $@
 
 Wizardry/%.o: Wizardry/%.c
@@ -175,7 +175,7 @@ Wizardry/%.asm: Wizardry/%.c
 # Other need long-call
 %.lyn.event: %.o $(LYN_REF) $(FE8_SYM)
 	@echo "[LYN]	$@"
-	$(LYN) -longcalls $< $(LYN_REF) > $@
+	@$(LYN) -longcalls $< $(LYN_REF) > $@
 	@$(LYN_PROTECTOR) $@ $(FE8_SYM) >> $@
 
 %.o: %.c
@@ -304,6 +304,17 @@ $(GFX_HEADER): $(GFX_SOURCES)
 
 CLEAN_BUILD += $(GFX_DIR)
 CLEAN_FILES += $(GFX_HEADER)
+
+# ==========
+# = Banims =
+# ==========
+
+BANIM_DIR := $(CONTENTS_DIR)/Banim
+
+%.banim.event: %.banim.txt
+	@$(MAKE) -f $(BANIM_DIR)/makefile $@
+
+CLEAN_BUILD += $(BANIM_DIR)
 
 # ========
 # = ENUM =
