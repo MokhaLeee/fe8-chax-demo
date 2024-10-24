@@ -19,6 +19,7 @@
 #endif
 
 #include "ChapterIntrofx/ChapterIntrofx.event"
+#include "GameIntrofx/GameIntrofx.event"
 
 #include "FillAIDangerMap20220712/install.event"
 #include "AutoGenLeftOAM/installer.txt"
