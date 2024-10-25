@@ -6,5 +6,6 @@
 #include "demo/chapter-assets.h"
 #include "demo/chax-pids.h"
 #include "demo/chax-jids.h"
+#include "demo/chax-sms.h"
 
 #endif

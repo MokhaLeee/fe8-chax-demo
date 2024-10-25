@@ -8,3 +8,4 @@ struct SupportDataPad {
 };
 
 extern const struct SupportDataPad _SupportData_all_zero;
+#define SupportData_all_zero ((const struct SupportData *)&_SupportData_all_zero)

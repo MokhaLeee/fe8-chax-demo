@@ -1,0 +1,14 @@
+StandingMapSprite(CHAX_SMS_ROY_LORD_T0, MapSprite16x16, RoyLord_Standing)
+MovingMapSprite(CHAX_JID_ROY_LORD_T0, RoyLord_Ap, RoyLord_Moving)
+
+ALIGN 4
+RoyLord_Standing:
+	#incbin "Source/RoyLord_Standing.4bpp.lz"
+
+ALIGN 4
+RoyLord_Ap:
+	#incbin "Source/RoyLord_Ap.romtcs.ap.bin"
+
+ALIGN 4
+RoyLord_Moving:
+	#incbin "Source/RoyLord_Moving.4bpp.lz"

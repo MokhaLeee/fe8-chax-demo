@@ -37,6 +37,6 @@ const struct CharacterData PInfo_Roy = {
     .growthRes = 30,
     .growthLck = 60,
     .attributes = CA_LORD,
-    .pSupportData = (void *)&_SupportData_all_zero,
+    .pSupportData = SupportData_all_zero,
     .visit_group = 0x7,
 };

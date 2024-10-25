@@ -6,6 +6,7 @@
 #include "common-chax.h"
 #include "constants/texts.h"
 #include "demo/chax-jids.h"
+#include "demo/chax-sms.h"
 
 extern const struct BattleAnimDef LordT0_Anims[];
 
@@ -14,7 +15,7 @@ const struct ClassData JInfo_RoyLord = {
     .descTextId = MSG_0309,
     .number = CHAX_JID_ROY_LORD_T0,
     .promotion = CLASS_EPHRAIM_MASTER_LORD, // TODO
-    .SMSId = 0x1,
+    .SMSId = CHAX_SMS_ROY_LORD_T0,
     .slowWalking = 0,
     .sort_order = 0x29,
 
