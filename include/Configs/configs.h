@@ -47,7 +47,7 @@
 /**
  * Enable leader-ship features
  */
-// #define CONFIG_LEADER_SHIP_EN
+#define CONFIG_LEADER_SHIP_EN
 
 /**
  * If uncommented, this will disable move-path calculation and display.

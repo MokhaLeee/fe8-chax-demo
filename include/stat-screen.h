@@ -17,7 +17,7 @@ extern struct {
 	u8 _pad_[1];
 } gStatScreenStExpa;
 
-#define STATSCREEN_TOGGLE_DURATION 20
+#define STATSCREEN_TOGGLE_DURATION 2
 
 #define ModifyTextPal(bank, color) \
 { \

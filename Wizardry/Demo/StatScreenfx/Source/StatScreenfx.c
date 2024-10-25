@@ -83,6 +83,7 @@ static void StatScreen_InitDisplayScrollingBG(void)
 void StatScreen_InitDisplayRework(ProcPtr proc)
 {
 	StatScreen_InitDisplay(proc);
+	BG_Fill(gBG1TilemapBuffer, 0);
 
 	/* Remove hallo */
 	CpuFastFill16(0, (void *)0x06004400, 0x1400);
