@@ -1,5 +1,4 @@
 .SUFFIXES:
-.SECONDARY:
 MAKEFLAGS += --no-print-directory
 
 # ==================
