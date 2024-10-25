@@ -1,0 +1,10 @@
+#ifndef ClassTable
+  #define ClassTable 0x807110
+#endif
+
+#define ORG_JInfo(pid) "ORG (ClassTable + 0x54 * pid)"
+
+PUSH
+    ORG_JInfo(CHAX_JID_ROY_LORD_T0)
+    #include "Source/RoyLord.lyn.event"
+POP

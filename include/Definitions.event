@@ -4,5 +4,7 @@
 #include "constants/event-cmds.h"
 #include "constants/texts.h"
 #include "demo/chapter-assets.h"
+#include "demo/chax-pids.h"
+#include "demo/chax-jids.h"
 
 #endif

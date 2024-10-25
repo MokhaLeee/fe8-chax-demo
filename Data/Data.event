@@ -35,4 +35,7 @@
 
 #include "../Wizardry/data.event"
 
+#include "PInfo/PInfo.event"
+#include "JInfo/JInfo.event"
+
 #endif

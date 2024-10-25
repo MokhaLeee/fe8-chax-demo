@@ -1,11 +1,13 @@
-#include "gbafe.h"
+#include "common-chax.h"
+#include "demo/chax-pids.h"
+#include "demo/chax-jids.h"
 
 static const struct UnitDefinition UnitDef_Ally[] = {
 	{
-		.charIndex = CHARACTER_EIRIKA,
-		.classIndex = CLASS_EIRIKA_LORD,
+		.charIndex = CHAX_PID_ROY,
+		.classIndex = CHAX_JID_ROY_LORD_T0,
 		.allegiance = FACTION_ID_BLUE,
-		.level = 10,
+		.level = 1,
 		.xPosition = 1,
 		.yPosition = 1,
 		.items = {

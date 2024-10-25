@@ -1,0 +1,12 @@
+#ifndef CharacterTable
+    #define CharacterTable 0x803D30
+#endif
+
+#define ORG_PInfo(pid) "ORG (CharacterTable + 0x34 * pid)"
+
+#include "Source/_common.lyn.event"
+
+PUSH
+    ORG_PInfo(CHAX_PID_ROY)
+    #include "Source/Roy.lyn.event"
+POP
