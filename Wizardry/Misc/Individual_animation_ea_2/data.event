@@ -1,10 +1,10 @@
 ALIGN 4
 CustomAnimeTable:
-BYTE 0x01  //Unit: Eirika
-BYTE 0x01  //Class: Lord
+BYTE CHAX_PID_ROY
+BYTE CHAX_JID_ROY_LORD_T0
 BYTE 0x00  //dummy
 BYTE 0x00  //dummy
-WORD 0x088AEFFC //Eirika Master Load Battle Animation.
+POIN LordT0_Anims
 
 BYTE 0x00  //Unit: term data
 BYTE 0x00  //dummy
