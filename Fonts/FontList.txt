@@ -1,5 +1,5 @@
 # ZH
-// Glyph/Mokha补充字库/font.fontall.txt
+Glyph/Mokha补充字库/font.fontall.txt
 Glyph/fe7u/font.fontall.txt
 // Glyph/fe8u/font.fontall.txt
 // Glyph/fe7cn/font.fontall.txt
