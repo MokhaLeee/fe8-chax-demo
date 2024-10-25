@@ -66,3 +66,4 @@ ALIGN 4
 #include "Demo/StatScreenfx/StatScreenfx.event"
 #include "Demo/ChapterIntrofx/ChapterIntrofx.event"
 #include "Demo/GameIntrofx/GameIntrofx.event"
+#include "Demo/JobRework/JobRework.event"

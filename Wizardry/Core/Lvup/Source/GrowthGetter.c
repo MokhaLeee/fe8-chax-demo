@@ -4,6 +4,8 @@
 #include "strmag.h"
 #include "constants/skills.h"
 
+#include "demo/job-rework.h"
+
 STATIC_DECLAR int GetUnitCommonGrowthBonus(int status, struct Unit *unit)
 {
 	int new = status;
@@ -26,6 +28,7 @@ int GetUnitHpGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthHP;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobHpGrowth(status, unit);
 	return status;
 }
 
@@ -34,6 +37,7 @@ int GetUnitPowGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthPow;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobStrGrowth(status, unit);
 	return status;
 }
 
@@ -42,6 +46,7 @@ int GetUnitMagGrowth(struct Unit *unit)
 	int status = GetUnitBasicMagGrowth(unit);
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobMagGrowth(status, unit);
 	return status;
 }
 
@@ -50,6 +55,7 @@ int GetUnitSklGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthSkl;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobSklGrowth(status, unit);
 	return status;
 }
 
@@ -58,6 +64,7 @@ int GetUnitSpdGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthSpd;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobSpdGrowth(status, unit);
 	return status;
 }
 
@@ -66,6 +73,7 @@ int GetUnitLckGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthLck;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobLckGrowth(status, unit);
 	return status;
 }
 
@@ -74,6 +82,7 @@ int GetUnitDefGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthDef;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobDefGrowth(status, unit);
 	return status;
 }
 
@@ -82,5 +91,6 @@ int GetUnitResGrowth(struct Unit *unit)
 	int status = unit->pCharacterData->growthRes;
 
 	status = GetUnitCommonGrowthBonus(status, unit);
+	status = GetUnitJobResGrowth(status, unit);
 	return status;
 }

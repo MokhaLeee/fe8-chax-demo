@@ -1,0 +1,10 @@
+/**
+ * FETH style job system reowrk
+ *
+ * 1. Class based growth
+ * 2. Promotion system
+ */
+
+// #include "data.event"
+
+#include "Source/JobGrowth.lyn.event"

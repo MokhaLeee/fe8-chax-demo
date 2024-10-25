@@ -25,3 +25,4 @@
 #include "Core/Movement/MovementData.event"
 #include "Misc/Individual_animation_ea_2/data.event"
 #include "Demo/StatScreenfx/_data.event"
+#include "Demo/JobRework/data.event"
