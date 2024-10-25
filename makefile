@@ -25,19 +25,22 @@ WIZARDRY_DIR := Wizardry
 CONTENTS_DIR := Contents
 GAMEDATA_DIR := Data
 
-HACK_DIRS := $(CONFIG_DIR) Wizardry $(CONTENTS_DIR) $(GAMEDATA_DIR)
+HACK_DIRS := $(CONFIG_DIR) Wizardry $(GAMEDATA_DIR)
+
+include Contents/contents.mk
+# HACK_DIRS += $(CONTENTS_DIR)
+HACK_DIRS += $(CONTENTS_COMMON_DIR)
 
 all:
 	@$(MAKE) pre_build	|| exit 1
 	@$(MAKE) chax		|| exit 1
 	@$(MAKE) post_chax	|| exit 1
 
-include Contents/contents.mk
-
 CACHE_DIR := .cache_dir
 $(shell mkdir -p $(CACHE_DIR) > /dev/null)
 
 CLEAN_FILES :=
+CLEAN_PNG_FILES :=
 CLEAN_DIRS  := $(CACHE_DIR) .release_dir $(shell find -name __pycache__)
 CLEAN_BUILD :=
 
@@ -257,15 +260,15 @@ TSA_FILES := $(shell find $(HACK_DIRS) -type f -name '*.tsa')
 	@cd $(dir $<) && $(GRIT) $(notdir $<) $(GRITLZ77ARGS)
 	@mv $(basename $<).img.bin $@
 
-CLEAN_FILES += $(PNG_FILES:.png=.gbapal) $(PNG_FILES:.png=.4bpp) $(PNG_FILES:.png=.4bpp.lz)
-CLEAN_FILES += $(PNG_FILES:.png=.lz77)
-CLEAN_FILES += $(TSA_FILES:.tsa=.tsa.lz)
+CLEAN_PNG_FILES += $(PNG_FILES:.png=.gbapal) $(PNG_FILES:.png=.4bpp) $(PNG_FILES:.png=.4bpp.lz)
+CLEAN_PNG_FILES += $(PNG_FILES:.png=.lz77)
+CLEAN_PNG_FILES += $(TSA_FILES:.tsa=.tsa.lz)
 
 %.img.bin %.map.bin %.pal.bin: %.png
 	@echo "[GEN]	$@"
 	@$(GRIT) $< -gB 4 -gzl -m -mLf -mR4 -mzl -pn 16 -ftb -fh! -o $@
 
-CLEAN_FILES += $(PNG_FILES:.png=.img.bin) $(PNG_FILES:.png=.map.bin) $(PNG_FILES:.png=.pal.bin)
+CLEAN_PNG_FILES += $(PNG_FILES:.png=.img.bin) $(PNG_FILES:.png=.map.bin) $(PNG_FILES:.png=.pal.bin)
 
 # ========
 # = MAPS =
@@ -442,6 +445,7 @@ CLEAN_FILES += $(shell find $(HACK_DIRS) -type f -name '*.EXPERIMENTAL-checkpatc
 
 clean_basic:
 	@rm -f $(CLEAN_FILES)
+	@rm -f $(CLEAN_PNG_FILES)
 	@rm -rf $(CLEAN_DIRS)
 
 clean:
